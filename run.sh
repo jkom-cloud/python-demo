@@ -1,1 +1,1 @@
-FLASK_APP=flask_demo.py ./venv/bin/flask run -h $HOST -p $PORT
+./venv/bin/uwsgi --http $HOST:$PORT --wsgi-file flask_demo.py --callable app --processes 2 --threads 2
