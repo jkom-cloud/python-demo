@@ -1,2 +1,5 @@
 # python-demo
-nodejs demo for deployment tool
+
+python demo for deployment tool
+
+- flask_demo: a simple flask service
