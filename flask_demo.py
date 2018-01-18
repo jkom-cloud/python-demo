@@ -17,7 +17,7 @@ def fib_gen():
 def index():
     """Welcome page"""
     now = datetime.datetime.now().isoformat()
-    return jsonify(message='Hello World!!!', ts=now)
+    return jsonify(message='Hello World!!', ts=now)
 
 @app.route('/ping')
 def ping():
