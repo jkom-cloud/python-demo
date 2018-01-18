@@ -15,9 +15,14 @@ def fib_gen():
 
 @app.route('/')
 def index():
-    """Welcomepage"""
+    """Welcome page"""
     now = datetime.datetime.now().isoformat()
     return jsonify(message='Hello World!', ts=now)
+
+@app.route('/ping')
+def ping():
+    """ping"""
+    return 'pong'
 
 @app.route('/fib/<int:n>')
 def fib(n):
