@@ -4,14 +4,9 @@ import datetime
 from flask import Flask
 from flask import jsonify
 
-app = Flask(__name__)
+import lib
 
-def fib_gen():
-    """Fibonacci sequence generator"""
-    a, b = 0, 1
-    while True:
-        yield a
-        a, b = b, a + b
+app = Flask(__name__)
 
 @app.route('/')
 def index():
@@ -30,6 +25,4 @@ def fib(n):
     if not 0 <= n <= 1000:
         return jsonify(error='n must between 0 and 1000'), 400
     t = time.time()
-    fg = fib_gen()
-    seq = [next(fg) for i in range(n + 1)]
-    return jsonify(n=n, seq=seq, ms=(time.time() - t) * 1e3)
+    return jsonify(n=n, seq=lib.fib_seq(n), ms=(time.time() - t) * 1e3)

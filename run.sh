@@ -1,1 +1,1 @@
-./venv/bin/uwsgi --http $HOST:$PORT --wsgi-file flask_demo.py --callable app --processes 2 --threads 2
+./venv/bin/uwsgi --http $HOST:$PORT --wsgi-file wsgi.py --callable app --processes 2 --threads 2
