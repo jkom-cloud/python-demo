@@ -1,3 +1,2 @@
-Flask==0.12.2
-uwsgi==2.0.15
-pytest==3.3.2
+Flask==1.1.1
+pytest==5.3.2
