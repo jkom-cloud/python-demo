@@ -1,12 +1,14 @@
 # python-demo
 
-python demo for deployment tool
+[![Build Status](https://travis-ci.org/jkom-cloud/python-demo.svg?branch=master)](https://travis-ci.org/jkom-cloud/python-demo)
+
+Python demo for deployment tool
 
 ## Intro
 
 This project includes demos of deploying python services with [jkom-cloud/deployment](https://github.com/jkom-cloud/deployment).
 
-Please refer to chi.liu@jiukangyun.com for any question. Contribution to demo features/services are always welcomed!
+Please refer to `chi.liu@jiukangyun.com` for any question. Contribution to demo features/services are always welcomed!
 
 ## Usage
 
@@ -20,5 +22,5 @@ The following sections provide specs of python-based services deployed by the de
 A simple web service via flask
 
 - [/](http://precisecare.99jkom.com:5000): welcome
-- [/ping](http://precisecare.99jkom.com:5000/ping): pong!
-- [/fib/n](http://precisecare.99jkom.com:5000/fib/10): Fibonacci sequence of [F0...Fn]
+- [/ping/](http://precisecare.99jkom.com:5000/ping/): pong!
+- [/fib/seq/<int:n>/](http://precisecare.99jkom.com:5000/fib/seq/10/): Fibonacci sequence of [F0...Fn]
